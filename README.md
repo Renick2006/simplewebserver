@@ -40,56 +40,53 @@ Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 from http.server import HTTPServer, BaseHTTPRequestHandler 
 content="""
 <html>
-    <head>
-        <title>WEB APPLICATION</title>
-    </head>
-    <body>
-        <table border="6" bgcolor="lightyellow">
-            <caption>OSI MODEL LAYERS</caption>
-            <tr bgcolor="lightgreen">
-                <th>S.no</th>
-                <th>Layer</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td>1.</td>
-                <td>Application</td>
-                <td>User interface, network services</td>
-            </tr>
-            <tr>
-                <td>2.</td>
-                <td>Presentation</td>
-                <td>Data translation, encryption</td>
-            </tr>
-            <tr>
-                <td>3.</td>
-                <td>Session</td>
-                <td>Establishes, manages sessions</td>
-            </tr>
-            <tr>
-                <td>4.</td>
-                <td>Transport</td>
-                <td>Reliable data transfer</td>
-            </tr>
-            <tr>
-                <td>5.</td>
-                <td>Network</td>
-                <td>Routing, addressing</td>
-            </tr>
-            <tr>
-                <td>6.</td>
-                <td>Data Link</td>
-                <td>MAC addressing, error detection</td>
-            </tr>
-            <tr>
-                <td>7.</td>
-                <td>Physical</td>
-                <td>Bit transmission through media</td>
-            </tr>
-        </table>
-    </body>
-</html>
+<head>
+    <title>TCP/IP Layers and Protocols</title>
+</head>
+<body>
+    <table border="1" cellspacing="5" cellpadding="10">
+        <tr>
+            <th colspan="2">TCP/IP Layers</th>
+            <th colspan="5">TCP/IP Protocols</th>
+        </tr>
 
+        <!-- Application Layer -->
+        <tr bgcolor="#f2b6b6">
+            <td rowspan="4"><strong>Application Layer</strong></td>
+            <td></td>
+            <td>HTTP</td>
+            <td>FTP</td>
+            <td>Telnet</td>
+            <td>SMTP</td>
+            <td>DNS</td>
+        </tr>
+
+        <!-- Transport Layer -->
+        <tr bgcolor="#c2f0c2">
+            <td><strong>Transport Layer</strong></td>
+            <td colspan="2">TCP</td>
+            <td colspan="3">UDP</td>
+        </tr>
+
+        <!-- Network Layer -->
+        <tr bgcolor="#b3d9ff">
+            <td><strong>Network Layer</strong></td>
+            <td>IP</td>
+            <td>ARP</td>
+            <td>ICMP</td>
+            <td colspan="2">IGMP</td>
+        </tr>
+
+        <!-- Network Interface Layer -->
+        <tr bgcolor="#f9e79f">
+            <td><strong>Network Interface Layer</strong></td>
+            <td>Ethernet</td>
+            <td>Token Ring</td>
+            <td colspan="3">Other Link-Layer Protocols</td>
+        </tr>
+    </table>
+</body>
+</html>
 """
 class myhandler (BaseHTTPRequestHandler):
      def do_GET(self):
