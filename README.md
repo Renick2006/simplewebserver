@@ -103,7 +103,8 @@ httpd.serve_forever()
 ```
 
 ## OUTPUT:
-![alt text](<Screenshot 2025-04-09 140839.png>)
+![Screenshot 2025-04-21 165816](https://github.com/user-attachments/assets/29d0fbfe-ed72-4234-978f-afea600c74f3)
+
 ![alt text](<Screenshot 2025-04-09 144309.png>)
 
 ## RESULT:
